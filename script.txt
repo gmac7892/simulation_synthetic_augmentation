@@ -1,0 +1,8 @@
+./labelme2coco.py original_train train_coco --labels labels.txt
+./labelme2coco.py original_val val_coco --labels labels.txt
+
+instances_train2020.json
+instances_val2020.json
+
+instances_minival2020.json
+python coco.py evaluate --dataset=/home/cai/Desktop/simulation_synthetic_augmentation --model=last
